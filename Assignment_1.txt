@@ -1,0 +1,182 @@
+Assignment-1
+
+Question-1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+
+Answer-1. The difference between frontend, backend, and full-stack development with
+suitable real-world examples are :-
+  1. Frontend Development (Client Side)
+•	The frontend is the part of a website or app that users see and interact with directly.
+•	It focuses on the look, layout, and design of the site.
+•	Common languages: HTML, CSS, JavaScript
+•	Frameworks: React, Angular, Vue.js
+Example: When you open Netflix, everything you see — like movie posters, play buttons, and menus — is part of the frontend. It’s what makes the website look beautiful and easy to use.
+ 2. Backend Development (Server Side)
+•	The backend is the hidden part that users don’t see.
+•	It handles how the website works, stores data, and connects with databases.
+•	Common languages: Python, Java, PHP, Node.js
+•	Databases: MySQL, MongoDB
+Example: When you click “Play” on Netflix, the backend checks your account, finds the movie on the server, and sends it to you. This process happens behind the scenes.
+ 3. Full-Stack Development
+•	A full-stack developer works on both frontend and backend.
+•	They design the user interface and also manage the data and logic behind it.
+•	Full-stack = Frontend + Backend
+Example: A full-stack developer can create a complete website like Amazon — designing how it looks (frontend) and also building the system that handles orders, payments, and product data (backend).
+
+
+
+
+Question-2. Create a simple diagram showing how the client-server model works in web architecture.
+Answer-2. Diagram:
++----------------+                           +-----------------+
+|                |                           |                 |
+|   Your         |                           |   Web Server    |
+|   Computer     | -- 1. HTTP Request -----> |   (e.g., Google)|
+|   (Client)     |                           |                 |
+|                | <---- 2. HTTP Response -- |                 |
++----------------+                           +-----------------+
+ 
+
+Explanation:
+Client (Your Computer): This is your device (laptop, phone) and the web browser (like Chrome or Firefox) you are using. It requests information.
+Server: This is a powerful computer that stores the website's files and data. Its job is to listen for requests.
+The Flow:
+1. Request: When you type google.com into your browser, your computer (the client) sends an HTTP request over the internet to Google's server asking for the webpage.
+2. Response: The Google server receives the request, finds the necessary files (HTML, CSS, JavaScript), and sends them back to your computer as an HTTP response. Your browser then assembles these files to display the webpage.
+
+
+
+
+Question-3.  Describe how a browser requests and displays a web page from a web server.
+Answer-3. Steps are:-
+•	We type a website name like www.google.com in the browser.
+•	The browser finds the server address of that website.
+•	It sends a request to the web server for the page.
+•	The server sends back the web page files (HTML, CSS, images, etc.).
+•	The browser reads those files and shows the web page on the screen.
+
+
+
+
+Question-4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+Answer-4. Tools are:-
+•	Code Editor (like VS Code):
+Used to write and edit website code.
+•	Web Browser (like Chrome or Firefox):
+Used to open and test web pages.
+•	Version Control (like Git and GitHub):
+Helps to save, track, and share project files.
+•	Local Server (like XAMPP or Node.js):
+Used to run and test websites on your computer.
+•	Package Manager (like npm):
+Helps to install extra tools and libraries easily.
+•	Developer Tools (in browsers):
+Used to check and fix code errors.
+•	Frameworks or Libraries (like Bootstrap, React):
+Make website design and coding faster and easier.
+
+
+
+
+Question-5. Explain what a web server is and give examples of commonly used servers.
+Answer-5. A web server is a computer or program that stores websites and sends web pages to users when they open a site in their browser.
+Common Web Servers:
+1.	Apache
+2.	Nginx
+3.	Microsoft IIS
+4.	LiteSpeed
+5.	Node.js
+
+
+
+Question-6. Define the roles of a frontend developer, backend developer, and database administrator
+in a project.
+Answer-6. Roles:-
+1. Frontend Developer:
+•	Makes the website look good and easy to use.
+•	Works on buttons, menus, images, and page layouts.
+•	Example: Designing YouTube’s homepage with videos and search bar.
+2. Backend Developer:
+•	Makes the website work behind the scenes.
+•	Handles user logins, data processing, and server tasks.
+•	Example: Checking your account when you log in to Facebook.
+3. Database Administrator (DBA):
+•	Manages the data storage for the website.
+•	Keeps user info, products, or orders safe and organized.
+•	Example: Storing all products and orders on Amazon.
+
+
+
+
+Question-7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a
+screenshot of the setup.
+Answer-7.
+attach image file in same repo................
+
+ 
+
+
+Question-8. Explain the difference between static and dynamic websites. Provide an example of
+each.
+Answer-8. The difference between static and dynamic websites are :
+1.Static Website:
+•	A static website shows the same content to everyone. It doesn’t change unless the developer updates it.
+•	Example: A personal portfolio website or a company’s simple brochure site.
+2.Dynamic Website:
+•	A dynamic website changes content automatically depending on the user or data.
+•	Example: Facebook or Amazon, where the page updates based on your account, preferences, or actions.
+
+
+
+
+Question-9. Research and list five web browsers. Explain how rendering engines differ between
+them.
+Answer-9. Five Web Browsers
+1.	Google Chrome
+2.	Mozilla Firefox
+3.	Microsoft Edge
+4.	Safari
+5.	Opera
+Browser	Rendering Engine	Notes
+Google Chrome	Blink	Fast and widely used; based on WebKit.
+Mozilla Firefox	Gecko	Focuses on standards and privacy.
+Microsoft Edge	Blink (Chromium-based)	Same as Chrome, modern and fast.
+Safari	WebKit	Optimized for Apple devices.
+Opera	Blink	Uses same engine as Chrome, but with extra features.
+
+
+
+
+Question-10. Draw a labeled diagram showing the basic web architecture flow — client, server,
+database, and APIs.
+Answer-10. Diagram
++-----------+                +------------------+                +-----------+
+|           |                |                  |                |           |
+|  Client   | -- Request --> |    Web Server    |                | Database  |
+| (Browser) |                | (Backend Logic)  | <-- Query ---- | (Storage) |
+|           |                |                  | ---- Data -->  |           |
++-----------+                +--------+---------+                +-----------+
+      ^                               |
+      |                               | API Request
+      |                               |
+      +-------- Response -------------+
+                                      |
+                                      v
+                             +-------------------+
+                             |                   |
+                             |   Third-Party API |
+                             | (e.g., Google Maps)|
+                             |                   |
+                             +-------------------+
+ 
+Explanation of the Flow:
+Client (Browser): The user interacts with the website on their browser. When they perform an action (like clicking a button), the client sends an HTTP Request to the server.
+Web Server (Backend): The server receives the request. This is where the main application logic lives.
+If the request needs data (like a user's profile information), the server sends a Query to the Database.
+The Database finds the requested data and sends it back to the server.
+
+APIs (Application Programming Interfaces):
+The server might also need to communicate with other services. For example, to show a map, it would send a request to a Third-Party API like Google Maps. The API then sends the map data back to the server.
+Response: The server gathers all the necessary information (from the database, from APIs, etc.) and packages it into an HTTP Response. This response is often in the form of HTML (for a full page load) or JSON (for data).
+Back to the Client: The client's browser receives the response and uses it to update the webpage, displaying the new information to the user.
+
