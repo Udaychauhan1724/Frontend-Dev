@@ -1,0 +1,48 @@
+<!-- Create tooltips with CSS only using position: absolute + opacity transition.
+Smooth fade-in (transition: 0.3s ease-in-out).
+Centered layout with Flexbox. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Tooltips</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: forestgreen;
+  }
+  .tooltip-container {
+    position: absolute;
+    display: inline-block;
+  }
+  .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .tooltip-container:hover .tooltip {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="tooltip-container">
+    <button>Hover me</button>
+    <div class="tooltip">Tooltip text</div>
+  </div>
+</body>
+</html>

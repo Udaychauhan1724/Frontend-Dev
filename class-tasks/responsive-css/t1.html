@@ -1,0 +1,37 @@
+<!-- Create a webpage using a fluid grid with 3 equal boxes in a row.
+Use flexbox or CSS grid.
+Each box should resize automatically with screen width.
+Add padding, background color, and centered text. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Grid Layout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+  .box {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  @media (max-width: 700px) {
+    body {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</body>
+</html>

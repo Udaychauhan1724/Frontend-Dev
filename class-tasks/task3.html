@@ -1,0 +1,82 @@
+<!-- Six images displayed via Grid/Flexbox.
+Hover = transform: scale(1.1) + dark overlay.
+Rounded corners, box-shadow, and captions (<figcaption>).
+Responsive: single column below 700 px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery with Hover Effects</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  figure:hover img {
+    transform: scale(1.1);
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color:lightblue;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+  <div class="gallery">
+    <figure>
+      <img src="Aivasovsky_Ivan_Constantinovich_The_Shipwreck.jpg" alt="Image 1">
+      <figcaption>Image 1</figcaption>
+    </figure>
+    <figure>
+      <img src="Picture__anger_of_the_seas__by_Aivasovsky.jpg" alt="Image 2">
+      <figcaption>Image 2</figcaption>
+    </figure>
+    <figure>
+      <img src="Ivan_Aivazovsky_-_Ship_on_Stormy_Seas wallpaper.jpg" alt="Image 3">
+      <figcaption>Image 3</figcaption>
+    </figure>
+    <figure>
+      <img src="Ivan-Aivazovsky-Among-the-Waves-1898.jpg" alt="Image 4">
+      <figcaption>Image 4</figcaption>
+    </figure>
+    <figure>
+      <img src="Aivasovsky_Ivan_Constantinovich_Night_at_the_Rodos_island.jpg" alt="Image 5">
+      <figcaption>Image 5</figcaption>
+    </figure>
+    <figure>
+      <img src="Aivasovsky_Ivan_Constantinovich_Nocturnal_Voyage.jpeg" alt="Image 6">
+      <figcaption>Image 6</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

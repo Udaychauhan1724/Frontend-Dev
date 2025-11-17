@@ -1,0 +1,103 @@
+<!-- Show examples of :hover, :focus, :active, :nth-child().
+Apply on links, buttons, and list items.
+Use color/background to visualize state changes.
+Align all using Flexbox with explanations beside each. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Action Pseudo-Classes</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .example {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .example div {
+    text-align: center;
+  }
+  a {
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  a:hover {
+    background-color: lightblue;
+    color: white;
+  }
+  button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  button:focus {
+    outline: none;
+    background-color: lightgreen;
+    color: white;
+  }
+  button:active {
+    background-color: darkgreen;
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  ul li:nth-child(odd) {
+    background-color: lightgray;
+  }
+  ul li:nth-child(even) {
+      background-color: white;
+  }
+  ul li:nth-child(odd):hover {
+      background-color: gray;
+      color: white;
+  }
+  ul li:nth-child(even):hover {
+      background-color: darkgray;
+      color: white;
+  }
+</style>
+</head>
+<body>
+  <h1>User Action Pseudo-Classes</h1>
+  <div class="example">
+    <div>
+      <h2>Links</h2>
+      <a href="#">Hover over me</a>
+    </div>
+    <div>
+      <h2>Buttons</h2>
+      <button>Focus on me</button>
+      <button>Click me</button>
+    </div>
+    <div>
+      <h2>List Items</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

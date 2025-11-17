@@ -1,0 +1,44 @@
+  <!-- Add one image that scales properly on all devices.
+Use max-width: 100% and height: auto.
+Maintain aspect ratio and rounded corners. -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flexible Image</title>
+  <style>
+    .img-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .responsive-img {
+      display: block;      
+      width: 100%;
+      max-width: 100%; 
+      height: auto;  
+      border-radius: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .img-wrap { padding: 0.5rem; }
+      .responsive-img { border-radius: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <figure class="img-wrap">
+    <img
+      src="Picture__anger_of_the_seas__by_Aivasovsky.jpg"
+      alt="Descriptive alt text"
+      class="responsive-img"
+    />
+    <figcaption style="text-align:center; font-size:.9rem; color:#666; margin-top:.5rem;">
+      A short caption (optional)
+    </figcaption>
+  </figure>
+</body>
+</html>
